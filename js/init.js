@@ -140,6 +140,10 @@
         });
     };
 
+    showStudents.sort(function(a, b) {
+      return parseFloat(a.showDay) - parseFloat(b.showDay);
+    });
+
     for (var i = 0; i < showStudents.length; i++) {
       var theTable = document.getElementById("tableContent");
       var content = '<tr>' +
