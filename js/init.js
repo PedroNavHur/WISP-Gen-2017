@@ -116,10 +116,6 @@
       }
     ];
 
-    console.log(
-      presentYear, presentMonth, presentDay, students[0].bornYear, d
-    );
-
     var showStudents = [];
 
     for (var i = 0; i < students.length; i++) {
@@ -154,12 +150,6 @@
 
       theTable.insertAdjacentHTML('beforeend', content);
     };
-
-    console.log(
-      showStudents[0].showName,
-      calculateYear(students[0].bornDay, students[0].bornMonth, students[0].bornYear),
-      calculateYear(3, 6, 1999)
-    );
 
     function calculateDays(day, month, year) {
       var milisecondsPerDay = 1000 * 60 * 60 * 24;
